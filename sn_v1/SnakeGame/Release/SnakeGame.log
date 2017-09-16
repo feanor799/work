@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  SnakeGame.cpp
+SnakeGame.cpp(26): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+SnakeGame.cpp(73): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+SnakeGame.cpp(88): warning C4018: <: несоответствие типов со знаком и без знака
+SnakeGame.cpp(218): warning C4305: =: усечение из "double" в "float"
+SnakeGame.cpp(221): warning C4305: =: усечение из "double" в "float"
+SnakeGame.cpp(224): warning C4305: =: усечение из "double" в "float"
+SnakeGame.cpp(310): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода
+  195 of 195 functions (100.0%) were compiled, the rest were copied from previous compilation.
+    90 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  SnakeGame.vcxproj -> C:\work\sn_v1\Release\SnakeGame.exe
+  SnakeGame.vcxproj -> C:\work\sn_v1\Release\SnakeGame.pdb (Full PDB)
