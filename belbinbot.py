@@ -1656,6 +1656,11 @@ def name7_8(m):
        q7_8(m)
 #########################################################################################################################################################
 
+while True:
+    try:
+        bot.polling(none_stop=True)
 
-#if __name__ == "__main__":
-bot.polling(none_stop=True)
+    except Exception as e:
+        print('timeout_err')  # или просто print(e) если у вас логгера нет,
+        # или import traceback; traceback.print_exc() для печати полной инфы
+        time.sleep(15)
