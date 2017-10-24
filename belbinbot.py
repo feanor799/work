@@ -594,7 +594,10 @@ def name(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            input(m)
        else:
-           q2(m)
+           if j==0:
+              q2_1(m)
+           else:
+              q2(m)
      except ValueError:
        input(m)
 
@@ -611,7 +614,10 @@ def name2(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            input(m)
        else:
-           q3(m)
+           if j==0:
+              q2_1(m)
+           else:
+              q3(m)
      except ValueError:
        q2(m)
 
@@ -628,7 +634,10 @@ def name3(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            input(m)
        else:
-           q4(m)
+           if j==0:
+              q2_1(m)
+           else:
+              q4(m)
      except ValueError:
        q3(m)
 
@@ -644,7 +653,10 @@ def name4(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            input(m)
        else:
-           q5(m)
+           if j==0:
+              q2_1(m)
+           else:
+              q5(m)
      except ValueError:
        q4(m)
 
@@ -660,7 +672,10 @@ def name5(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            input(m)
        else:
-           q6(m)
+           if j==0:
+              q2_1(m)
+           else:
+              q6(m)
      except ValueError:
        q5(m)
 
@@ -676,7 +691,10 @@ def name6(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            input(m)
        else:
-           q7(m)
+           if j==0:
+              q2_1(m)
+           else:
+              q7(m)
      except ValueError:
        q6(m)
 
@@ -692,7 +710,10 @@ def name7(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            input(m)
        else:
-           q8(m)
+           if j==0:
+              q2_1(m)
+           else:
+              q8(m)
      except ValueError:
        q7(m)
 
@@ -727,7 +748,10 @@ def name2_1(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q2_1(m)
        else:
-           q2_2(m)
+           if j==0:
+              q3_1(m)
+           else:
+              q2_2(m)
      except ValueError:
        q2_1(m)
 
@@ -743,7 +767,10 @@ def name2_2(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q2_1(m)
        else:
-           q2_3(m)
+           if j==0:
+              q3_1(m)
+           else:
+              q2_3(m)
      except ValueError:
        q2_2(m)
 
@@ -759,7 +786,10 @@ def name2_3(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q2_1(m)
        else:
-           q2_4(m)
+           if j==0:
+              q3_1(m)
+           else:
+              q2_4(m)
      except ValueError:
        q2_3(m)
 
@@ -775,7 +805,10 @@ def name2_4(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q2_1(m)
        else:
-           q2_5(m)
+           if j==0:
+              q3_1(m)
+           else:
+              q2_5(m)
      except ValueError:
        q2_4(m)
 
@@ -791,7 +824,10 @@ def name2_5(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q2_1(m)
        else:
-           q2_6(m)
+           if j==0:
+              q3_1(m)
+           else:
+              q2_6(m)
      except ValueError:
        q2_5(m)
 
@@ -807,7 +843,10 @@ def name2_6(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q2_1(m)
        else:
-           q2_7(m)
+           if j==0:
+              q3_1(m)
+           else:
+              q2_7(m)
      except ValueError:
        q2_6(m)
 
@@ -823,7 +862,10 @@ def name2_7(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q2_1(m)
        else:
-           q2_8(m)
+           if j==0:
+              q3_1(m)
+           else:
+              q2_8(m)
      except ValueError:
        q2_7(m)
 
@@ -858,7 +900,10 @@ def name3_1(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q3_1(m)
        else:
-           q3_2(m)
+           if j==0:
+              q4_1(m)
+           else:
+              q3_2(m)
      except ValueError:
        q3_1(m)
 
@@ -874,7 +919,10 @@ def name3_2(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q3_1(m)
        else:
-           q3_3(m)
+           if j==0:
+              q4_1(m)
+           else:
+              q3_3(m)
      except ValueError:
        q3_2(m)
 
@@ -890,7 +938,10 @@ def name3_3(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q3_1(m)
        else:
-           q3_4(m)
+           if j==0:
+              q4_1(m)
+           else:
+              q3_4(m)
      except ValueError:
        q3_3(m)
 
@@ -906,7 +957,10 @@ def name3_4(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q3_1(m)
        else:
-           q3_5(m)
+           if j==0:
+              q4_1(m)
+           else:
+              q3_5(m)
      except ValueError:
        q3_4(m)
 
@@ -922,7 +976,10 @@ def name3_5(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q3_1(m)
        else:
-           q3_6(m)
+           if j==0:
+              q4_1(m)
+           else:
+              q3_6(m)
      except ValueError:
        q3_5(m)
 
@@ -939,7 +996,10 @@ def name3_6(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q3_1(m)
        else:
-           q3_7(m)
+           if j==0:
+              q4_1(m)
+           else:
+              q3_7(m)
      except ValueError:
        q3_6(m)
 
@@ -955,7 +1015,10 @@ def name3_7(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q3_1(m)
        else:
-           q3_8(m)
+           if j==0:
+              q4_1(m)
+           else:
+              q3_8(m)
      except ValueError:
        q3_7(m)
 
@@ -990,7 +1053,10 @@ def name4_1(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q4_1(m)
        else:
-           q4_2(m)
+           if j==0:
+              q5_1(m)
+           else:
+              q4_2(m)
      except ValueError:
        q4_1(m)
 
@@ -1006,7 +1072,10 @@ def name4_2(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q4_1(m)
        else:
-           q4_3(m)
+           if j==0:
+              q5_1(m)
+           else:
+              q4_3(m)
      except ValueError:
        q4_2(m)
 
@@ -1022,7 +1091,10 @@ def name4_3(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q4_1(m)
        else:
-           q4_4(m)
+           if j==0:
+              q5_1(m)
+           else:
+              q4_4(m)
      except ValueError:
        q4_3(m)
 
@@ -1038,7 +1110,10 @@ def name4_4(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q4_1(m)
        else:
-           q4_5(m)
+           if j==0:
+              q5_1(m)
+           else:
+              q4_5(m)
      except ValueError:
        q4_4(m)
 
@@ -1054,7 +1129,10 @@ def name4_5(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q4_1(m)
        else:
-           q4_6(m)
+           if j==0:
+              q5_1(m)
+           else:
+              q4_6(m)
      except ValueError:
        q4_5(m)
 
@@ -1070,7 +1148,10 @@ def name4_6(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q4_1(m)
        else:
-           q4_7(m)
+           if j==0:
+              q5_1(m)
+           else:
+              q4_7(m)
      except ValueError:
        q4_6(m)
 
@@ -1086,7 +1167,10 @@ def name4_7(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q4_1(m)
        else:
-           q4_8(m)
+           if j==0:
+              q5_1(m)
+           else:
+              q4_8(m)
      except ValueError:
        q4_7(m)
 
@@ -1122,7 +1206,10 @@ def name5_1(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q5_1(m)
        else:
-           q5_2(m)
+           if j==0:
+              q6_1(m)
+           else:
+              q5_2(m)
      except ValueError:
        q5_1(m)
 
@@ -1138,7 +1225,10 @@ def name5_2(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q5_1(m)
        else:
-           q5_3(m)
+           if j==0:
+              q6_1(m)
+           else:
+              q5_3(m)
      except ValueError:
        q5_2(m)
 
@@ -1154,7 +1244,10 @@ def name5_3(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q5_1(m)
        else:
-           q5_4(m)
+           if j==0:
+              q6_1(m)
+           else:
+              q5_4(m)
      except ValueError:
        q5_3(m)
 
@@ -1170,7 +1263,10 @@ def name5_4(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q5_1(m)
        else:
-           q5_5(m)
+           if j==0:
+              q6_1(m)
+           else:
+              q5_5(m)
      except ValueError:
        q5_4(m)
 
@@ -1186,7 +1282,10 @@ def name5_5(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q5_1(m)
        else:
-           q5_6(m)
+           if j==0:
+              q6_1(m)
+           else:
+              q5_6(m)
      except ValueError:
        q5_5(m)
 
@@ -1202,7 +1301,10 @@ def name5_6(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q5_1(m)
        else:
-           q5_7(m)
+           if j==0:
+              q6_1(m)
+           else:
+              q5_7(m)
      except ValueError:
        q5_6(m)
 
@@ -1218,7 +1320,10 @@ def name5_7(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q5_1(m)
        else:
-           q5_8(m)
+           if j==0:
+              q6_1(m)
+           else:
+              q5_8(m)
      except ValueError:
        q5_7(m)
 
@@ -1255,7 +1360,10 @@ def name6_1(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q6_1(m)
        else:
-           q6_2(m)
+           if j==0:
+              q7_1(m)
+           else:
+              q6_2(m)
      except ValueError:
        q6_1(m)
   
@@ -1271,7 +1379,10 @@ def name6_2(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q6_1(m)
        else:
-           q6_3(m)
+           if j==0:
+              q7_1(m)
+           else:
+              q6_3(m)
      except ValueError:
        q6_2(m)
 
@@ -1287,7 +1398,10 @@ def name6_3(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q6_1(m)
        else:
-           q6_4(m)
+           if j==0:
+              q7_1(m)
+           else:
+              q6_4(m)
      except ValueError:
        q6_3(m)
 
@@ -1303,7 +1417,10 @@ def name6_4(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q6_1(m)
        else:
-           q6_5(m)
+           if j==0:
+              q7_1(m)
+           else:
+              q6_5(m)
      except ValueError:
        q6_4(m)
 
@@ -1319,7 +1436,10 @@ def name6_5(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q6_1(m)
        else:
-           q6_6(m)
+           if j==0:
+              q7_1(m)
+           else:
+              q6_6(m)
      except ValueError:
        q6_5(m)
 
@@ -1335,7 +1455,10 @@ def name6_6(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q6_1(m)
        else:
-           q6_7(m)
+           if j==0:
+              q7_1(m)
+           else:
+              q6_7(m)
      except ValueError:
        q6_6(m)
 
@@ -1351,7 +1474,10 @@ def name6_7(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q6_1(m)
        else:
-           q6_8(m)
+           if j==0:
+              q7_1(m)
+           else:
+              q6_8(m)
      except ValueError:
        q6_7(m)
 
@@ -1389,7 +1515,10 @@ def name7_1(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q7_1(m)
        else:
-           q7_2(m)
+           if j==0:
+              out(m)
+           else:
+              q7_2(m)
      except ValueError:
        q7_1(m)
 
@@ -1405,7 +1534,10 @@ def name7_2(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q7_1(m)
        else:
-           q7_3(m)
+           if j==0:
+              out(m)
+           else:
+              q7_3(m)
      except ValueError:
        q7_2(m)
 
@@ -1421,7 +1553,10 @@ def name7_3(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q7_1(m)
        else:
-           q7_4(m)
+           if j==0:
+              out(m)
+           else:
+              q7_4(m)
      except ValueError:
        q7_3(m)
 
@@ -1437,7 +1572,10 @@ def name7_4(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q7_1(m)
        else:
-           q7_5(m)
+           if j==0:
+              out(m)
+           else:
+              q7_5(m)
      except ValueError:
        q7_4(m)
 
@@ -1453,7 +1591,10 @@ def name7_5(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q7_1(m)
        else:
-           q7_6(m)
+           if j==0:
+              out(m)
+           else:
+              q7_6(m)
      except ValueError:
        q7_5(m)
 
@@ -1469,7 +1610,10 @@ def name7_6(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q7_1(m)
        else:
-           q7_7(m)
+           if j==0:
+              out(m)
+           else:
+              q7_7(m)
      except ValueError:
        q7_6(m)
 
@@ -1485,7 +1629,10 @@ def name7_7(m):
            bot.send_message(m.chat.id,'Сумма баллов превышает 10, возврат к первому вопросу')
            q7_1(m)
        else:
-           q7_8(m)
+           if j==0:
+              out(m)
+           else:
+              q7_8(m)
      except ValueError:
        q7_7(m)
 
@@ -1510,8 +1657,5 @@ def name7_8(m):
 #########################################################################################################################################################
 
 
-
-
-
-if __name__ == "__main__":
-    bot.polling(none_stop=True)
+#if __name__ == "__main__":
+bot.polling(none_stop=True)
