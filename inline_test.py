@@ -538,6 +538,10 @@ def out(m):
      global j
      j = 10
      print('name_data')
+     # логирование в файлик.
+     my_file = open("log.txt", 'a')
+     my_file.write(m.chat.id)
+     my_file.write(neme_data)
      print(neme_data)
      bot.send_message(m.chat.id,'Отчет о тестировании')
      bot.send_message(m.chat.id,'Имя жертвы: '+str(neme_data))
@@ -550,20 +554,30 @@ def out(m):
            test_exit = k
      if test_exit == 0:
          bot.send_message(m.chat.id,'Исполнитель (И) \n Это  член  команды,  выражающий  ее  сущность,  потому  что  цели  Исполнителя  идентичны целям  команды.  Часто  Исполнитель  является именно тем руководите лем, выполняющим задания, которые другие не всегда хотят выполнять. Исполнитель систематически составляет планы и эффективно претворяет их в производство. Стиль Исполнителя в команде - организация работ. Он может иметь недостаток гибкости и не любит непроверенные идеи.')
+         my_file.write('Исполнитель')
      if test_exit == 1:
          bot.send_message(m.chat.id,'Председатель (или Координатор) (П) \n Этот  тип  руководителя  организует  работу  команды  и  использование  ресурсов  в соответствии с групповыми целями. Председатель имеет ясное представление о сильных и слабых сторонах команды и работает с максимальным использованием потенциала каждого члена команды. Председатель может не обладать блестящим интеллектом, но он хорошо руководит  людьми.  Главная  личная  черта  характера  Председателя - это  сильное доминирование  и  преданность  групповым  целям.  Председатель  является  спокойным, несуетливым,   само дисциплинированным,   поощряющим   и   поддерживающим   типом руководителя команды. Стиль руководства командой Председателя - принимать вносимые вклады в деятельность команды и оценивать их в соответствии с целями команды. ')
+         my_file.write('Председатель')
      if test_exit == 2:
          bot.send_message(m.chat.id,'Формирователь (Ф) \n Это   другой,   более   умело   управляющий,   честолюбивый,   оппортунистический, предпринимательский  тип  руководителя  команды.  Он  формирует  усилия  команды  через установление  целей  и  приоритетов.  Формирователь  присоединяется  к  точке  зрения,  что победителей  не  судят. Стиль  руководства  Формирователя -оспаривать,  мотивировать, достигать. Он склонен к провокациям, раздражению и нетерпению')
+         my_file.write('Формирователь')
      if test_exit == 3:
          bot.send_message(m.chat.id,'Мыслитель (Генератор идей) (М) \n Это  интровертный  (сосредоточенный  на  своем  внутреннем  мире),  умный,  склонный  к нововведениям  член  команды.  Мыслитель  представляет н овые  идеи,  пытается  их развивать,  разрабатывает  стратегию.  Он  интересуется,  в  основном,  более  широкими вопросами, которые могут дать результат, при недостаточном внимании к деталям. Стиль Мыслителя - привносить  инновационные  идеи  в  работу  команды  и  ее  цели.  Он  склонен витать в облаках и игнорировать детали или протокол')
+         my_file.write('Мыслитель')
      if test_exit == 4:
          bot.send_message(m.chat.id,'Разведчик (Исследователь ресурсов) (Р) \n Это  экстравертивный  (ориентированный  на  внешний  мир),  собирающий  ресурсы  тип генератора  идей.  Разведчик  исследует  и  докладывает  об  идеях,  ресурсах и  новых усовершенствованиях,  которые  имеются  вне  команды.  Он  естествен  в  общественных отношениях  и  создает  полезные  внешние  контакты  для  команды.  Он  обычно  знает,  как примирить  интересы  людей  с  общественными  интересами.  Разведчик  обычно  знает,  кто может помочь решить проблемы. Стиль Исследователя ресурсов - создать сеть и собирать полезные  ресурсы  для  команды.  Разведчики  могут  терять  интерес,  стоит  только  пройти первоначальному увлечению.')
+         my_file.write('Разведчик')
      if test_exit == 5:
          bot.send_message(m.chat.id,'Оценщик (О) Оценщик  объективен  при  анализировании  проблем  и  оценке  идей.  Редко  охваченный энтузиазмом, он защищает команду от принятия импульсивных, отчаянных решений. Стиль построения команды Оценщика-объективно анализировать и оценивать идеи и решения команды. Им может не хватать вдохновения или способности мотивировать других.')
+         my_file.write('Оценщик')
      if test_exit == 6:
          bot.send_message(m.chat.id,'Коллективист (К) Коллективист играет ориентированную на отношения, поддерживающую роль. Этот чрезвычайно популярный тип нередок среди высших менеджеров. Коллективист благоприятно  действует  на  дух  команды,  улучшает  межличностное  общение,  сводит  к минимуму конфликты в команде. Стиль построения команды Коллективиста-поддерживать отношения внутри команды. Он может быть нерешителен в момент кризиса.')
+         my_file.write('Коллективист')
      if test_exit == 7:
          bot.send_message(m.chat.id,'Доводчик (Завершающий работу) (Д) Доводчик  продвигается  вперед  и  настаивает  на  данном  плане,  проекте  или  предложении,  когда возбуждение  и  энтузиазм  других  членов  команды  исчерпаны.  Доводчик хорошо  планирует, выполняет и доводит до конца задачи команды. Он раздражается, если работа команды отстает от графика, и теряет удовлетворение от работы, когда работа не завершена. Стиль построения команды Доводчика-настаивать ради продвижения вперед, выдерживать сроки.')
+         my_file.write('Доводчик')
+     my_file.close()
+
 
 #######################################################обработчики для первого блока#####################################################################
 
@@ -576,7 +590,10 @@ def name(m):
      try:
        data1[0] = int(m.text)
        j = j-int(m.text)
-       q2(m)
+       if j<0:
+           input(m)
+       else:
+           q2(m)
      except ValueError:
        input(m)
 
@@ -589,7 +606,10 @@ def name2(m):
      try:
        data1[1] = int(m.text)
        j = j-int(m.text)
-       q3(m)
+       if j<0:
+           input(m)
+       else:
+           q3(m)
      except ValueError:
        q2(m)
 
@@ -602,7 +622,10 @@ def name3(m):
      try:
        data1[2] = int(m.text)
        j = j-int(m.text)
-       q4(m)
+       if j<0:
+           input(m)
+       else:
+           q4(m)
      except ValueError:
        q3(m)
 
@@ -614,7 +637,10 @@ def name4(m):
      try:
        data1[3] = int(m.text)
        j = j-int(m.text)
-       q5(m)
+       if j<0:
+           input(m)
+       else:
+           q5(m)
      except ValueError:
        q4(m)
 
@@ -626,7 +652,10 @@ def name5(m):
      try:
        data1[4] = int(m.text)
        j = j-int(m.text)
-       q6(m)
+       if j<0:
+           input(m)
+       else:
+           q6(m)
      except ValueError:
        q5(m)
 
@@ -638,7 +667,10 @@ def name6(m):
      try:
        data1[5] = int(m.text)
        j = j-int(m.text)
-       q7(m)
+       if j<0:
+           input(m)
+       else:
+           q7(m)
      except ValueError:
        q6(m)
 
@@ -650,7 +682,10 @@ def name7(m):
      try:
        data1[6] = int(m.text)
        j = j-int(m.text)
-       q8(m)
+       if j<0:
+           input(m)
+       else:
+           q8(m)
      except ValueError:
        q7(m)
 
@@ -681,7 +716,10 @@ def name2_1(m):
      try:
        data2[0] = int(m.text)
        j = j-int(m.text)
-       q2_2(m)
+       if j<0:
+           q2_1(m)
+       else:
+           q2_2(m)
      except ValueError:
        q2_1(m)
 
@@ -693,7 +731,10 @@ def name2_2(m):
      try:
        data2[1] = int(m.text)
        j = j-int(m.text)
-       q2_3(m)
+       if j<0:
+           q2_1(m)
+       else:
+           q2_3(m)
      except ValueError:
        q2_2(m)
 
@@ -705,7 +746,10 @@ def name2_3(m):
      try:
        data2[2] = int(m.text)
        j = j-int(m.text)
-       q2_4(m)
+       if j<0:
+           q2_1(m)
+       else:
+           q2_4(m)
      except ValueError:
        q2_3(m)
 
@@ -717,7 +761,10 @@ def name2_4(m):
      try:
        data2[3] = int(m.text)
        j = j-int(m.text)
-       q2_5(m)
+       if j<0:
+           q2_1(m)
+       else:
+           q2_5(m)
      except ValueError:
        q2_4(m)
 
@@ -729,7 +776,10 @@ def name2_5(m):
      try:
        data2[4] = int(m.text)
        j = j-int(m.text)
-       q2_6(m)
+       if j<0:
+           q2_1(m)
+       else:
+           q2_6(m)
      except ValueError:
        q2_5(m)
 
@@ -741,7 +791,10 @@ def name2_6(m):
      try:
        data2[5] = int(m.text)
        j = j-int(m.text)
-       q2_7(m)
+       if j<0:
+           q2_1(m)
+       else:
+           q2_7(m)
      except ValueError:
        q2_6(m)
 
@@ -753,7 +806,10 @@ def name2_7(m):
      try:
        data2[6] = int(m.text)
        j = j-int(m.text)
-       q2_8(m)
+       if j<0:
+           q2_1(m)
+       else:
+           q2_8(m)
      except ValueError:
        q2_7(m)
 
@@ -784,7 +840,10 @@ def name3_1(m):
      try:
        data3[0] = int(m.text)
        j = j-int(m.text)
-       q3_2(m)
+       if j<0:
+           q3_1(m)
+       else:
+           q3_2(m)
      except ValueError:
        q3_1(m)
 
@@ -796,7 +855,10 @@ def name3_2(m):
      try:
        data3[1] = int(m.text)
        j = j-int(m.text)
-       q3_3(m)
+       if j<0:
+           q3_1(m)
+       else:
+           q3_3(m)
      except ValueError:
        q3_2(m)
 
@@ -808,7 +870,10 @@ def name3_3(m):
      try:
        data3[2] = int(m.text)
        j = j-int(m.text)
-       q3_4(m)
+       if j<0:
+           q3_1(m)
+       else:
+           q3_4(m)
      except ValueError:
        q3_3(m)
 
@@ -820,7 +885,10 @@ def name3_4(m):
      try:
        data3[3] = int(m.text)
        j = j-int(m.text)
-       q3_5(m)
+       if j<0:
+           q3_1(m)
+       else:
+           q3_5(m)
      except ValueError:
        q3_4(m)
 
@@ -832,7 +900,10 @@ def name3_5(m):
      try:
        data3[4] = int(m.text)
        j = j-int(m.text)
-       q3_6(m)
+       if j<0:
+           q3_1(m)
+       else:
+           q3_6(m)
      except ValueError:
        q3_5(m)
 
@@ -845,7 +916,10 @@ def name3_6(m):
      try:
        data3[5] = int(m.text)
        j = j-int(m.text)
-       q3_7(m)
+       if j<0:
+           q3_1(m)
+       else:
+           q3_7(m)
      except ValueError:
        q3_6(m)
 
@@ -857,7 +931,10 @@ def name3_7(m):
      try:
        data3[6] = int(m.text)
        j = j-int(m.text)
-       q3_8(m)
+       if j<0:
+           q3_1(m)
+       else:
+           q3_8(m)
      except ValueError:
        q3_7(m)
 
@@ -888,7 +965,10 @@ def name4_1(m):
      try:
        data4[0] = int(m.text)
        j = j-int(m.text)
-       q4_2(m)
+       if j<0:
+           q4_1(m)
+       else:
+           q4_2(m)
      except ValueError:
        q4_1(m)
 
@@ -900,7 +980,10 @@ def name4_2(m):
      try:
        data4[1] = int(m.text)
        j = j-int(m.text)
-       q4_3(m)
+       if j<0:
+           q4_1(m)
+       else:
+           q4_3(m)
      except ValueError:
        q4_2(m)
 
@@ -912,7 +995,10 @@ def name4_3(m):
      try:
        data4[2] = int(m.text)
        j = j-int(m.text)
-       q4_4(m)
+       if j<0:
+           q4_1(m)
+       else:
+           q4_4(m)
      except ValueError:
        q4_3(m)
 
@@ -924,7 +1010,10 @@ def name4_4(m):
      try:
        data4[3] = int(m.text)
        j = j-int(m.text)
-       q4_5(m)
+       if j<0:
+           q4_1(m)
+       else:
+           q4_5(m)
      except ValueError:
        q4_4(m)
 
@@ -936,7 +1025,10 @@ def name4_5(m):
      try:
        data4[4] = int(m.text)
        j = j-int(m.text)
-       q4_6(m)
+       if j<0:
+           q4_1(m)
+       else:
+           q4_6(m)
      except ValueError:
        q4_5(m)
 
@@ -948,7 +1040,10 @@ def name4_6(m):
      try:
        data4[5] = int(m.text)
        j = j-int(m.text)
-       q4_7(m)
+       if j<0:
+           q4_1(m)
+       else:
+           q4_7(m)
      except ValueError:
        q4_6(m)
 
@@ -960,7 +1055,10 @@ def name4_7(m):
      try:
        data4[6] = int(m.text)
        j = j-int(m.text)
-       q4_8(m)
+       if j<0:
+           q4_1(m)
+       else:
+           q4_8(m)
      except ValueError:
        q4_7(m)
 
@@ -992,7 +1090,10 @@ def name5_1(m):
      try:
        data5[0] = int(m.text)
        j = j-int(m.text)
-       q5_2(m)
+       if j<0:
+           q5_1(m)
+       else:
+           q5_2(m)
      except ValueError:
        q5_1(m)
 
@@ -1004,7 +1105,10 @@ def name5_2(m):
      try:
        data5[1] = int(m.text)
        j = j-int(m.text)
-       q5_3(m)
+       if j<0:
+           q5_1(m)
+       else:
+           q5_3(m)
      except ValueError:
        q5_2(m)
 
@@ -1016,7 +1120,10 @@ def name5_3(m):
      try:
        data5[2] = int(m.text)
        j = j-int(m.text)
-       q5_4(m)
+       if j<0:
+           q5_1(m)
+       else:
+           q5_4(m)
      except ValueError:
        q5_3(m)
 
@@ -1028,7 +1135,10 @@ def name5_4(m):
      try:
        data5[3] = int(m.text)
        j = j-int(m.text)
-       q5_5(m)
+       if j<0:
+           q5_1(m)
+       else:
+           q5_5(m)
      except ValueError:
        q5_4(m)
 
@@ -1040,7 +1150,10 @@ def name5_5(m):
      try:
        data5[4] = int(m.text)
        j = j-int(m.text)
-       q5_6(m)
+       if j<0:
+           q5_1(m)
+       else:
+           q5_6(m)
      except ValueError:
        q5_5(m)
 
@@ -1052,7 +1165,10 @@ def name5_6(m):
      try:
        data5[5] = int(m.text)
        j = j-int(m.text)
-       q5_7(m)
+       if j<0:
+           q5_1(m)
+       else:
+           q5_7(m)
      except ValueError:
        q5_6(m)
 
@@ -1064,7 +1180,10 @@ def name5_7(m):
      try:
        data5[6] = int(m.text)
        j = j-int(m.text)
-       q5_8(m)
+       if j<0:
+           q5_1(m)
+       else:
+           q5_8(m)
      except ValueError:
        q5_7(m)
 
@@ -1097,7 +1216,10 @@ def name6_1(m):
      try:
        data6[0] = int(m.text)
        j = j-int(m.text)
-       q6_2(m)
+       if j<0:
+           q6_1(m)
+       else:
+           q6_2(m)
      except ValueError:
        q6_1(m)
   
@@ -1109,7 +1231,10 @@ def name6_2(m):
      try:
        data6[1] = int(m.text)
        j = j-int(m.text)
-       q6_3(m)
+       if j<0:
+           q6_1(m)
+       else:
+           q6_3(m)
      except ValueError:
        q6_2(m)
 
@@ -1121,7 +1246,10 @@ def name6_3(m):
      try:
        data6[2] = int(m.text)
        j = j-int(m.text)
-       q6_4(m)
+       if j<0:
+           q6_1(m)
+       else:
+           q6_4(m)
      except ValueError:
        q6_3(m)
 
@@ -1133,7 +1261,10 @@ def name6_4(m):
      try:
        data6[3] = int(m.text)
        j = j-int(m.text)
-       q6_5(m)
+       if j<0:
+           q6_1(m)
+       else:
+           q6_5(m)
      except ValueError:
        q6_4(m)
 
@@ -1145,7 +1276,10 @@ def name6_5(m):
      try:
        data6[4] = int(m.text)
        j = j-int(m.text)
-       q6_6(m)
+       if j<0:
+           q6_1(m)
+       else:
+           q6_6(m)
      except ValueError:
        q6_5(m)
 
@@ -1157,7 +1291,10 @@ def name6_6(m):
      try:
        data5[5] = int(m.text)
        j = j-int(m.text)
-       q6_7(m)
+       if j<0:
+           q6_1(m)
+       else:
+           q6_7(m)
      except ValueError:
        q6_6(m)
 
@@ -1169,7 +1306,10 @@ def name6_7(m):
      try:
        data6[6] = int(m.text)
        j = j-int(m.text)
-       q6_8(m)
+       if j<0:
+           q6_1(m)
+       else:
+           q6_8(m)
      except ValueError:
        q6_7(m)
 
@@ -1203,7 +1343,10 @@ def name7_1(m):
      try:
        data7[0] = int(m.text)
        j = j-int(m.text)
-       q7_2(m)
+       if j<0:
+           q7_1(m)
+       else:
+           q7_2(m)
      except ValueError:
        q7_1(m)
 
@@ -1215,7 +1358,10 @@ def name7_2(m):
      try:
        data7[1] = int(m.text)
        j = j-int(m.text)
-       q7_3(m)
+       if j<0:
+           q7_1(m)
+       else:
+           q7_3(m)
      except ValueError:
        q7_2(m)
 
@@ -1227,7 +1373,10 @@ def name7_3(m):
      try:
        data7[2] = int(m.text)
        j = j-int(m.text)
-       q7_4(m)
+       if j<0:
+           q7_1(m)
+       else:
+           q7_4(m)
      except ValueError:
        q7_3(m)
 
@@ -1239,7 +1388,10 @@ def name7_4(m):
      try:
        data7[3] = int(m.text)
        j = j-int(m.text)
-       q7_5(m)
+       if j<0:
+           q7_1(m)
+       else:
+           q7_5(m)
      except ValueError:
        q7_4(m)
 
@@ -1251,7 +1403,10 @@ def name7_5(m):
      try:
        data7[4] = int(m.text)
        j = j-int(m.text)
-       q7_6(m)
+       if j<0:
+           q7_1(m)
+       else:
+           q7_6(m)
      except ValueError:
        q7_5(m)
 
@@ -1263,7 +1418,10 @@ def name7_6(m):
      try:
        data7[5] = int(m.text)
        j = j-int(m.text)
-       q7_7(m)
+       if j<0:
+           q7_1(m)
+       else:
+           q7_7(m)
      except ValueError:
        q7_6(m)
 
@@ -1275,7 +1433,10 @@ def name7_7(m):
      try:
        data7[6] = int(m.text)
        j = j-int(m.text)
-       q7_8(m)
+       if j<0:
+           q7_1(m)
+       else:
+           q7_8(m)
      except ValueError:
        q7_7(m)
 
