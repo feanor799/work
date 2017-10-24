@@ -4,7 +4,7 @@ import telebot
 import array
 from telebot import types
 
-bot = telebot.TeleBot("251851093:AAHYP8ncoak5nWc8ylehlW7B3hb3Qm9Ec84")
+bot = telebot.TeleBot("475804097:AAHvaamrh3bpiA1ci0z2lBD1jN_y9OpvjFI")
 # задаю векторы для накопления данных опроса
 data1 = [0] * 8
 data2 = [0] * 8
